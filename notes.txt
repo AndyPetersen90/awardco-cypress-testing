@@ -1,0 +1,24 @@
+Taking Notes because this is all new to me.
+
+//-----------------NOTES------------------//
+We can use cy.get() to select an element based on its class. 
+Then we can use the .type() command to enter text into the selected input. 
+Finally, we can verify that the value of the input reflects the text that was 
+typed with another .should().
+
+// cy.contains("type").click();
+
+// .type("fake@email.com")
+// .should("have.value", "fake@email.com");
+
+// Should be on a new URL which
+// includes '/commands/actions'
+// cy.url().should("include", "/commands/actions");
+
+// Get an input, type into it and verify
+// that the value has been updated
+
+// cy.origin('www.acme.com', () => {
+//   cy.visit('/history/founder')
+//     cy.get('h1').contains('About our Founder, Marvin Acme') // 👍
+//   })
